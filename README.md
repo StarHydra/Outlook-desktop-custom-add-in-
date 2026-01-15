@@ -39,3 +39,5 @@ icon will pop-up on the ribbon.
 
 #Note- ngrok free tier provides usd 5 credits monthly, for production needs better hosting.
 #Note- SendGrid API is only free for 60 days, if service is liked then you have to pay to use this API.
+#Note- get five icons of size 16x16, 32x32, 64x64, 80x80 and 128x128 pixels and named them icon-16, icon-32, icon-64, icon-80 and 
+icon-128 respectively and store them in the folder as mentioned in `Step 3`. 
