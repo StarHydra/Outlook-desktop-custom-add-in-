@@ -1,15 +1,15 @@
-## Outlook-desktop-custom-add-in-
+# Outlook-desktop-custom-add-in-
 Created a custom outlook add-in that helps forward entire mail or just portion of mail to desired email addresses.
 
 
-# Pre-requisites
+## Pre-requisites
 
 Node js
 SendGrid API
 Two ngrok API (two accounts)-> one for backend and one for front end
 
 
-# Steps on running this add-in
+## Steps on running this add-in
 
 Step 1 - download node js depending upon Operating System of your machine.
 
