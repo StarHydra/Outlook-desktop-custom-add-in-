@@ -17,21 +17,21 @@ Step 2 - download ngrok and add it to environment variables-path (you can check 
 to your path by opening command terminal and typing ngrok --version, if it gives a value then success).
 
 Step 3 - open a command terminal in the folder where manifest.xml, taskpane.js, etc., files are
-present and run following two commands - "npx -y mkcert create-ca" then "npx -y mkcert create-cert".
+present and run following two commands - **npx -y mkcert create-ca** then **npx -y mkcert create-cert**.
 Then right click on the cert.crt that has been created, select local machine option under Store Location;
 Under Place all certificated in following store, browse and choose Trusted Root Certification 
 Authorities.
 
 Step 4 - open two command terminals in the same folder. On one terminal run the command 
-"http-server -p 3000 --cors -S -C cert.crt -K cert.key" to start frontend and on the second terminal 
-run the command "node server.js" to start backend. These terminals needs to be kept running.  
+**http-server -p 3000 --cors -S -C cert.crt -K cert.key** to start frontend and on the second terminal 
+run the command **node server.js** to start backend. These terminals needs to be kept running.  
 
 Step 5 - once all these are set up and running, open two more terminals anywhere, and run ngrok,
 once on localhost:3000 and other on localhost:3001 simultaneously, using commands
-"ngrok config add-authtoken your-authtoken" and then "ngrok http https://localhost:300x" 
+**ngrok config add-authtoken your-authtoken** and then **ngrok http https://localhost:300x** 
 where x = 0 or 1 based on localhost. 3001 is used for backend and 3000 is used for frontend.
-The free domain looks like "https://crotched-kristine-overhighly.ngrok-free.dev" [frontend] or
-"https://contrastable-overaffected-irma.ngrok-free.dev" [backend] and will be given as soon as ngrok
+The free domain looks like **https://crotched-kristine-overhighly.ngrok-free.dev** [used for frontend] or
+**https://contrastable-overaffected-irma.ngrok-free.dev** [used for backend] and will be given as soon as ngrok
 starts, just replace these domains in manifest.xml and taskpane.js accordingly.   
 
 Step 6 - open outlook desktop, select add-in, select add custom add-in, then select manifest.xml,
