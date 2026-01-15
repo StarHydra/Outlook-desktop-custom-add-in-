@@ -28,10 +28,10 @@ run the command **node server.js** to start backend. These terminals needs to be
 
 Step 5 - once all these are set up and running, open two more terminals anywhere, and run ngrok,
 once on localhost:3000 and other on localhost:3001 simultaneously, using commands
-**ngrok config add-authtoken your-authtoken** and then **ngrok http https://localhost:300x** 
+**ngrok config add-authtoken your-authtoken** and then **ngrok http `https://localhost:300x`** 
 where x = 0 or 1 based on localhost. 3001 is used for backend and 3000 is used for frontend.
-The free domain looks like **https://crotched-kristine-overhighly.ngrok-free.dev** [used for frontend] or
-**https://contrastable-overaffected-irma.ngrok-free.dev** [used for backend] and will be given as soon as ngrok
+The free domain looks like **`https://crotched-kristine-overhighly.ngrok-free.dev`** [used for frontend] or
+**`https://contrastable-overaffected-irma.ngrok-free.dev`** [used for backend] and will be given as soon as ngrok
 starts, just replace these domains in manifest.xml and taskpane.js accordingly.   
 
 Step 6 - open outlook desktop, select add-in, select add custom add-in, then select manifest.xml,
