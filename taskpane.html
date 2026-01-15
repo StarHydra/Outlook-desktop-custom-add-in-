@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Forwarder</title>
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+    <link rel="stylesheet" href="taskpane.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Email Forwarder</h2>
+        
+        <!-- Recipient Selection -->
+        <div class="recipient-section">
+            <div class="section-title">Send To:</div>
+            <div class="recipient-options">
+                <label class="radio-option">
+                    <input type="radio" name="recipient" value="default" checked>
+                    <span>Default (tairsxc@gmail.com)</span>
+                </label>
+                <label class="radio-option">
+                    <input type="radio" name="recipient" value="custom">
+                    <span>Custom Email Address</span>
+                </label>
+            </div>
+            <div id="customEmailSection" style="display: none;">
+                <input type="email" id="customEmail" placeholder="Enter email address..." />
+            </div>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <!-- Content Selection -->
+        <div class="instructions">
+            Choose what to forward
+        </div>
+        
+        <div class="option-buttons">
+            <button id="entireEmailBtn" class="option-btn active">Entire Email</button>
+            <button id="selectedTextBtn" class="option-btn">Selected Text Only</button>
+        </div>
+        
+        <div id="entireEmailSection" class="section">
+            <div id="emailPreview">
+                <div class="preview-label">Email Preview:</div>
+                <div id="previewContent">Loading email details...</div>
+            </div>
+            <button id="sendEntireBtn" class="send-btn">Forward Entire Email</button>
+        </div>
+        
+        <div id="selectedTextSection" class="section" style="display: none;">
+            <textarea id="selectedText" placeholder="Select text from the email, then paste it here or it will auto-populate"></textarea>
+            <button id="sendSelectedBtn" class="send-btn">Forward Selected Text</button>
+        </div>
+        
+        <div id="status"></div>
+    </div>
+
+    <script src="taskpane.js"></script>
+</body>
+</html>
